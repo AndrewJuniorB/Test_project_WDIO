@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1647248720660' stop='1647248722113'>
+    <name>verify we able to fetch verification code from Outlook</name>
+    <title>verify we able to fetch verification code from Outlook</title>
+    <test-cases>
+        <test-case start='1647248720661' status='passed' stop='1647248722112'>
+            <name>Should open a new outlook tab</name>
+            <title>Should open a new outlook tab</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-99.0.4844.51'/>
+            </parameters>
+            <steps>
+                <step start='1647248720663' status='passed' stop='1647248722112'>
+                    <name>navigateTo</name>
+                    <title>navigateTo</title>
+                    <attachments>
+                        <attachment title='Request' source='c6d122b2-c1c5-4a60-9129-50a49c165032-attachment.json' type='application/json' size='38'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,116 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1647246053907' stop='1647246054468'>
+    <name>Send 2FA verification code</name>
+    <title>Send 2FA verification code</title>
+    <test-cases>
+        <test-case start='1647246053907' status='passed' stop='1647246054464'>
+            <name>Should detect if send code button clickable</name>
+            <title>Should detect if send code button clickable</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-99.0.4844.51'/>
+            </parameters>
+            <steps>
+                <step start='1647246053909' status='passed' stop='1647246053916'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='90919a3c-9836-45ff-a200-2163728ad28b-attachment.json' type='application/json' size='63'/>
+                        <attachment title='Response' source='40b17aed-b0c1-4038-8b67-2e59c7fdba81-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps>
+                        <step start='1647246053911' status='passed' stop='1647246053913'>
+                            <name>findElement</name>
+                            <title>findElement</title>
+                            <attachments>
+                                <attachment title='Request' source='67710826-0e91-43d6-95e3-c3153239b7fe-attachment.json' type='application/json' size='63'/>
+                                <attachment title='Response' source='ff893fb5-f017-4cf6-ba78-17b934863908-attachment.json' type='application/json' size='57'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1647246053919' status='passed' stop='1647246053962'>
+                    <name>elementClick</name>
+                    <title>elementClick</title>
+                    <attachments>
+                        <attachment title='Request' source='b8f71d36-19e7-426c-817c-6ed5a976a7bb-attachment.json' type='application/json' size='31'/>
+                    </attachments>
+                    <steps>
+                        <step start='1647246053920' status='passed' stop='1647246053932'>
+                            <name>executeScript</name>
+                            <title>executeScript</title>
+                            <attachments>
+                                <attachment title='Request' source='91f50a52-58db-453a-985e-734251d93b87-attachment.json' type='application/json' size='8285'/>
+                                <attachment title='Response' source='ddede90c-c47a-43e5-94ea-f13745035c62-attachment.json' type='application/json' size='4'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1647246053934' status='passed' stop='1647246053942'>
+                            <name>executeScript</name>
+                            <title>executeScript</title>
+                            <attachments>
+                                <attachment title='Request' source='e5d4cd69-7176-4ccd-ab9f-87104dc1d0b4-attachment.json' type='application/json' size='5597'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1647246053947' status='passed' stop='1647246053953'>
+                            <name>executeScript</name>
+                            <title>executeScript</title>
+                            <attachments>
+                                <attachment title='Request' source='3a723be9-bf58-4728-95f1-165f5cb701ae-attachment.json' type='application/json' size='8285'/>
+                                <attachment title='Response' source='0160bfea-79fd-4c76-bd2c-356f866d6f18-attachment.json' type='application/json' size='4'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1647246053955' status='passed' stop='1647246053960'>
+                            <name>executeScript</name>
+                            <title>executeScript</title>
+                            <attachments>
+                                <attachment title='Request' source='4c4fae62-4601-4918-9108-50726b16d4af-attachment.json' type='application/json' size='5597'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1647246054449' status='passed' stop='1647246054455'>
+                    <name>executeScript</name>
+                    <title>executeScript</title>
+                    <attachments>
+                        <attachment title='Request' source='812fa2db-9dc8-46ab-85da-3be2db47794b-attachment.json' type='application/json' size='8285'/>
+                        <attachment title='Response' source='d0f32b7e-cf1f-4ec7-b242-37770338971d-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1647246054458' status='passed' stop='1647246054463'>
+                    <name>executeScript</name>
+                    <title>executeScript</title>
+                    <attachments>
+                        <attachment title='Request' source='37132828-ed76-4838-b6f2-f61ee8308db5-attachment.json' type='application/json' size='5597'/>
+                        <attachment title='Response' source='382d9c09-53cc-45fd-bd6a-b93646ec1a14-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1647246054464' status='passed' stop='1647246054467'>
+            <name>Should send code by click Send Code button</name>
+            <title>Should send code by click Send Code button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-99.0.4844.51'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

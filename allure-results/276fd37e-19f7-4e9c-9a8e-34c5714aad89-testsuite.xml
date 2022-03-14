@@ -1,0 +1,170 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1647244958262' stop='1647244959728'>
+    <name>Send 2FA verification code</name>
+    <title>Send 2FA verification code</title>
+    <test-cases>
+        <test-case start='1647244958263' status='passed' stop='1647244958826'>
+            <name>should detect if send code button clickable</name>
+            <title>should detect if send code button clickable</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-99.0.4844.51'/>
+            </parameters>
+            <steps>
+                <step start='1647244958264' status='passed' stop='1647244958272'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='3ac88acd-2f35-474e-a7ec-71976d6cc899-attachment.json' type='application/json' size='63'/>
+                        <attachment title='Response' source='bebdb649-a026-4089-9342-2de22592da44-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps>
+                        <step start='1647244958267' status='passed' stop='1647244958269'>
+                            <name>findElement</name>
+                            <title>findElement</title>
+                            <attachments>
+                                <attachment title='Request' source='f3fd54d9-4641-4e8b-9748-75d0f14b03df-attachment.json' type='application/json' size='63'/>
+                                <attachment title='Response' source='7d6d2904-de42-4653-98b6-f91608f813c7-attachment.json' type='application/json' size='57'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1647244958274' status='passed' stop='1647244958320'>
+                    <name>elementClick</name>
+                    <title>elementClick</title>
+                    <attachments>
+                        <attachment title='Request' source='e8393d12-68fe-4267-b9ea-840026dc0dd1-attachment.json' type='application/json' size='31'/>
+                    </attachments>
+                    <steps>
+                        <step start='1647244958277' status='passed' stop='1647244958288'>
+                            <name>executeScript</name>
+                            <title>executeScript</title>
+                            <attachments>
+                                <attachment title='Request' source='a6a3c200-a2fa-421b-a8c8-6106f6f06e05-attachment.json' type='application/json' size='8285'/>
+                                <attachment title='Response' source='eaaf4b28-fa36-433a-954c-bcebd2843bc0-attachment.json' type='application/json' size='4'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1647244958291' status='passed' stop='1647244958300'>
+                            <name>executeScript</name>
+                            <title>executeScript</title>
+                            <attachments>
+                                <attachment title='Request' source='147ab0fc-b001-4e66-a82b-a4dd7c498da3-attachment.json' type='application/json' size='5597'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1647244958302' status='passed' stop='1647244958308'>
+                            <name>executeScript</name>
+                            <title>executeScript</title>
+                            <attachments>
+                                <attachment title='Request' source='5515725b-1642-466d-a0a3-4e37cd506345-attachment.json' type='application/json' size='8285'/>
+                                <attachment title='Response' source='d62c46ce-275d-45c8-85b2-c70651183061-attachment.json' type='application/json' size='4'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1647244958314' status='passed' stop='1647244958315'>
+                            <name>executeScript</name>
+                            <title>executeScript</title>
+                            <attachments>
+                                <attachment title='Request' source='23a443b0-abe8-4e3f-a120-1e1adc83ab65-attachment.json' type='application/json' size='5597'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1647244958809' status='passed' stop='1647244958817'>
+                    <name>executeScript</name>
+                    <title>executeScript</title>
+                    <attachments>
+                        <attachment title='Request' source='2d67be46-fad6-4334-873f-31348b57c6fc-attachment.json' type='application/json' size='8285'/>
+                        <attachment title='Response' source='23d654bf-e7a6-44ee-8e1b-3c96f99d7d32-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1647244958820' status='passed' stop='1647244958826'>
+                    <name>executeScript</name>
+                    <title>executeScript</title>
+                    <attachments>
+                        <attachment title='Request' source='6a8537d0-5450-48da-bd41-a4e0da061ddb-attachment.json' type='application/json' size='5597'/>
+                        <attachment title='Response' source='f11a901a-bba9-495e-8de1-cbf09d426105-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1647244958826' status='broken' stop='1647244959728'>
+            <name>Should send code by click Send Code button</name>
+            <title>Should send code by click Send Code button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-99.0.4844.51'/>
+            </parameters>
+            <steps>
+                <step start='1647244958829' status='passed' stop='1647244958831'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='f50d9e24-3356-42a0-9169-342cd80ab910-attachment.json' type='application/json' size='82'/>
+                        <attachment title='Response' source='db8aa1af-1957-4dd1-a63e-49d3c7d02f71-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1647244958836' status='passed' stop='1647244958838'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='8ac0da16-bd84-450f-a8ce-146333818eb5-attachment.json' type='application/json' size='82'/>
+                        <attachment title='Response' source='7e1966d2-2633-4dc0-a005-f1882ee3fb47-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1647244958843' status='broken' stop='1647244959728'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='b85c4fc7-2452-44eb-996d-e92573efec37-attachment.json' type='application/json' size='68'/>
+                    </attachments>
+                    <steps>
+                        <step start='1647244958848' status='passed' stop='1647244959727'>
+                            <name>takeScreenshot</name>
+                            <title>takeScreenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='2b308fb5-16d9-4881-87fb-b9892fea29eb-attachment.png' type='image/png' size='1480345'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Evaluation failed: DOMException: Failed to execute 'querySelector' on 'Document': 'select#2fa-method-select' is not a valid selector.
+                    at __puppeteer_evaluation_script__:1:33</message>
+                <stack-trace>Evaluation failed: DOMException: Failed to execute 'querySelector' on 'Document': 'select#2fa-method-select' is not a valid selector.
+                    at __puppeteer_evaluation_script__:1:33
+                Error: Evaluation failed: DOMException: Failed to execute 'querySelector' on 'Document': 'select#2fa-method-select' is not a valid selector.
+                    at __puppeteer_evaluation_script__:1:33
+                    at ExecutionContext._evaluateInternal (/Users/andrewburlakov/Desktop/JavaScript/QA_For_ALL/project_16/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async ElementHandle.evaluateHandle (/Users/andrewburlakov/Desktop/JavaScript/QA_For_ALL/project_16/node_modules/puppeteer-core/lib/cjs/puppeteer/common/JSHandle.js:121:16)
+                    at async Object.internalHandler.queryOne (/Users/andrewburlakov/Desktop/JavaScript/QA_For_ALL/project_16/node_modules/puppeteer-core/lib/cjs/puppeteer/common/QueryHandler.js:24:30)
+                    at async DOMWorld.$ (/Users/andrewburlakov/Desktop/JavaScript/QA_For_ALL/project_16/node_modules/puppeteer-core/lib/cjs/puppeteer/common/DOMWorld.js:101:23)
+                    at async DevToolsDriver.findElement (/Users/andrewburlakov/Desktop/JavaScript/QA_For_ALL/project_16/node_modules/devtools/build/utils.js:89:15)
+                    at async Browser.wrappedCommand (/Users/andrewburlakov/Desktop/JavaScript/QA_For_ALL/project_16/node_modules/devtools/build/devtoolsdriver.js:102:26)
+                    at async Browser.wrapCommandFn (/Users/andrewburlakov/Desktop/JavaScript/QA_For_ALL/project_16/node_modules/@wdio/utils/build/shim.js:137:29)
+                    at async Browser.$ (/Users/andrewburlakov/Desktop/JavaScript/QA_For_ALL/project_16/node_modules/webdriverio/build/commands/browser/$.js:88:17)
+                    at async Browser.wrapCommandFn (/Users/andrewburlakov/Desktop/JavaScript/QA_For_ALL/project_16/node_modules/@wdio/utils/build/shim.js:137:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,160 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1647245496225' stop='1647245498758'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1647245496225' status='passed' stop='1647245498758'>
+            <name>Should login with valid credentials</name>
+            <title>Should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-99.0.4844.51'/>
+            </parameters>
+            <steps>
+                <step start='1647245496234' status='passed' stop='1647245496719'>
+                    <name>navigateTo</name>
+                    <title>navigateTo</title>
+                    <attachments>
+                        <attachment title='Request' source='9a957aea-77ed-46e9-8c57-d906db69eb0b-attachment.json' type='application/json' size='68'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1647245496723' status='passed' stop='1647245496780'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='582e919f-88ab-4315-bd9f-3729d07ca41f-attachment.json' type='application/json' size='66'/>
+                        <attachment title='Response' source='1f8f14be-84ac-481f-bf63-198fdd696c87-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1647245496785' status='passed' stop='1647245496795'>
+                    <name>findElements</name>
+                    <title>findElements</title>
+                    <attachments>
+                        <attachment title='Request' source='df6f280f-6010-41b4-8f2d-f03bb266dd01-attachment.json' type='application/json' size='66'/>
+                        <attachment title='Response' source='31588d64-ed6b-46b5-9c2d-8aa165615663-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1647245497288' status='passed' stop='1647245497301'>
+                    <name>findElements</name>
+                    <title>findElements</title>
+                    <attachments>
+                        <attachment title='Request' source='5b457c66-7fe4-412b-8ced-a5ede701440a-attachment.json' type='application/json' size='66'/>
+                        <attachment title='Response' source='14633696-3040-4b09-b6bd-d5df6b1e195c-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1647245497787' status='passed' stop='1647245497792'>
+                    <name>findElements</name>
+                    <title>findElements</title>
+                    <attachments>
+                        <attachment title='Request' source='badd05c0-fcaa-4129-b795-4116e741abeb-attachment.json' type='application/json' size='66'/>
+                        <attachment title='Response' source='c22d4467-617e-49b2-911a-58ec722a3db2-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1647245498292' status='passed' stop='1647245498297'>
+                    <name>findElements</name>
+                    <title>findElements</title>
+                    <attachments>
+                        <attachment title='Request' source='83d40d4a-9091-499d-b4c8-663894600b4f-attachment.json' type='application/json' size='66'/>
+                        <attachment title='Response' source='c7668008-185e-4520-9a44-82475f4a2a59-attachment.json' type='application/json' size='66'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1647245498305' status='passed' stop='1647245498311'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='19ef8fcd-e6e3-4474-8074-c1a011541a76-attachment.json' type='application/json' size='66'/>
+                        <attachment title='Response' source='0fa5022b-7a26-497b-b00a-38da5248bc0c-attachment.json' type='application/json' size='56'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1647245498315' status='passed' stop='1647245498323'>
+                    <name>elementClear</name>
+                    <title>elementClear</title>
+                    <attachments>
+                        <attachment title='Request' source='79aa76c0-1b74-41ae-94c7-7f20163a94e5-attachment.json' type='application/json' size='30'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1647245498331' status='passed' stop='1647245498545'>
+                    <name>elementSendKeys</name>
+                    <title>elementSendKeys</title>
+                    <attachments>
+                        <attachment title='Request' source='3a2af887-86e7-4819-b420-f9e73117883b-attachment.json' type='application/json' size='72'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1647245498548' status='passed' stop='1647245498550'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='da70aca5-c85d-4576-b30a-b73834d0de72-attachment.json' type='application/json' size='69'/>
+                        <attachment title='Response' source='b03d88f4-7542-4c2f-9cb7-e07be7ea67bf-attachment.json' type='application/json' size='56'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1647245498558' status='passed' stop='1647245498563'>
+                    <name>elementClear</name>
+                    <title>elementClear</title>
+                    <attachments>
+                        <attachment title='Request' source='b4f69ab2-e610-4cac-a425-b4c9ad23b5b6-attachment.json' type='application/json' size='30'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1647245498568' status='passed' stop='1647245498682'>
+                    <name>elementSendKeys</name>
+                    <title>elementSendKeys</title>
+                    <attachments>
+                        <attachment title='Request' source='68443a67-e769-4e81-99f2-f06597545d76-attachment.json' type='application/json' size='55'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1647245498686' status='passed' stop='1647245498692'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='9ddcd27d-9ec9-4155-8bbe-400ab324ef00-attachment.json' type='application/json' size='63'/>
+                        <attachment title='Response' source='245cc73b-c57a-4d25-89dc-116f4b19403d-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1647245498696' status='passed' stop='1647245498741'>
+                    <name>elementClick</name>
+                    <title>elementClick</title>
+                    <attachments>
+                        <attachment title='Request' source='f85ef08f-7bba-42aa-91c9-e5f8d138d19c-attachment.json' type='application/json' size='31'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1647245498744' status='passed' stop='1647245498746'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='55dfe343-0d85-4320-9df0-fa6b324049df-attachment.json' type='application/json' size='45'/>
+                        <attachment title='Response' source='6a8a7fdd-3a8d-4bcb-b7ff-3123531802bf-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1647245498750' status='passed' stop='1647245498755'>
+                    <name>getElementAttribute</name>
+                    <title>getElementAttribute</title>
+                    <attachments>
+                        <attachment title='Request' source='726fb645-c7b1-4499-a04d-22d604ac05db-attachment.json' type='application/json' size='49'/>
+                        <attachment title='Response' source='3571fbae-0dee-43c0-b11c-a39f72dc7e70-attachment.json' type='application/json' size='74'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
