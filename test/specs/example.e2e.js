@@ -1,14 +1,14 @@
 const CountryLangPage = require('../pageobjects/country.lang.page.js');
 const LoginPage = require('../pageobjects/login.page.js');
 const TwoFactorVerification = require('../pageobjects/twoFA.page.js');
-
-// const SecurePage = require('../pageobjects/secure.page');
+// Testing variables
 const userName = "codechallengeadc@outlook.com";
 const password = "P@ssword$12";
 const pswOutlook = "P@ssword$1234";
 const option = "1";
+let code;
 
-
+// TESTS
 describe('Dropdown elements: English language, USA country', () => {
     it('should choose US and English', async () => {
         await CountryLangPage.open();
@@ -27,13 +27,12 @@ describe('My Login application', () => {
         const link = $(`a`);
         await expect(link).toHaveHref('https://pro.libreview.io/articles/min-requirements?lang=en-US&country=US');
         await LoginPage.btnSubmit.click();
-        // await expect(SecurePage.flashAlert).toBeExisting();
-        // await expect(SecurePage.flashAlert).toHaveTextContaining(
-        //     'You logged into a secure area!');
+
     });
 });
 
 describe('Send 2FA verification code', () => {
+
     it('Should detect if send code button clickable', async () => {
         let el = $(`//button[@type="submit"]`);
         let clickable = await el.isClickable();
@@ -41,6 +40,7 @@ describe('Send 2FA verification code', () => {
         // wait for element to be clickable
         await browser.waitUntil(() => el.isClickable());
     });
+
     it('Should send code by click Send Code button', async () => {
         await TwoFactorVerification.sendCode(option);
         let verify = $('#twoFactor-step2-code-input');
@@ -66,15 +66,15 @@ describe("Verify we able to fetch verification code from Outlook", () => {
     });
 
     it('Should login into Outlook with valid user credentials', async () => {
-        const handles = await browser.getWindowHandles();
-        console.log('HANDLESTITLE --=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=', handles);
+
         // Enter email
         await $('#i0116').setValue(userName);
-        await browser.pause(3000);
+        await browser.pause(2000);
+
         // Clcik Next
         let next = $(`#idSIButton9`);
         await next.click();
-        await browser.pause(3000);
+        await browser.pause(2000);
 
         // Password
         await $('#i0118').setValue(pswOutlook);
@@ -84,27 +84,38 @@ describe("Verify we able to fetch verification code from Outlook", () => {
     });
 
     // Here should be test when user login to Outlook Email;
-    it('Should select option yes/No for Stay signed in', async() => {
-        await $(`#idSIButton9`).click();
-        await browser.pause(3000);
-        await browser.url('https://outlook.live.com/mail/0/');
-        await browser.pause(3000);
-        let spanText = await $('span');
-        console.log('SPAN TEXT=====================================>', await spanText.getText());
-        let text = await spanText.getText();
-        let globalRegex = new RegExp('code is:*', 'g');
-        console.log('INDEX ======================>', globalRegex.lastIndex)
-        await browser.debug();
-
-
+    it('Should select option yes/No for Stay signed in', async () => {
+        await $(`#idBtn_Back`).click();
+        // Next Click on Inbox and select email from libreview
+        await browser.newWindow('https://outlook.live.com/mail/0/inbox')
+        const handles = await browser.getWindowHandles();
+        console.log('HANDLESTITLE --=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=', handles);
+        await browser.pause(5000);
+        let latest = $("span._2hJ6aXqUdsgXw2vXjJfAzj");
+        await latest.click();
+        let yourCodeIs = $(`//*[@id="x_backgroundTable"]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr/td/table[2]/tbody/tr[2]/td`);
+        code = await yourCodeIs.getText();
+        code = code.slice(code.length - 6);
+        await console.log("CODE =============================", code);
+        await browser.pause(5000);
         // switch back via title match
-        await browser.switchWindow('LibreView')
+        // Switch to Verification page and set code libreview window;
+        await browser.switchWindow('LibreView');
+        await browser.pause(5000);
+        let codeInput = $('#twoFactor-step2-code-input');
+        await browser.pause(5000);
+        await codeInput.setValue(code);
+        let verifyAndLogin = $('#twoFactor-step2-next-button');
+        await browser.pause(3000);
+        verifyAndLogin.click();
+        await browser.pause(3000);
     });
 
-
-    // Next Click on Inbox and select email from libreview
-    // Within email where by selector copy or send value to libreview window;
-
+    it('Verifying page contains a button “Press to Begin Upload”', async () => {
+        await browser.switchWindow('LibreView');
+        let downloadBtn = $('#meterUpload-linkedUpload-pat-button');
+        console.log(await downloadBtn.isDisplayed());
+    });
 
 });
 
