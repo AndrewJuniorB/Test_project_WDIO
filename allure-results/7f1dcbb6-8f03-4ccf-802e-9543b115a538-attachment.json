@@ -1,0 +1,5 @@
+{
+  "elementId": "ELEMENT-1",
+  "using": "xpath",
+  "value": "./option[normalize-space(@value) = \"US\"]|./optgroup/option[normalize-space(@value) = \"US\"]"
+}

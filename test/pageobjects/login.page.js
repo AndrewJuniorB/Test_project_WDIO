@@ -5,11 +5,11 @@ const language = "en-US";
 class LoginPage extends Page {
 
     get inputEmails() {
-        return $("#loginForm-email-input");
+        return $('#loginForm-email-input');
     }
 
     get inputPassword () {
-        return $("#loginForm-password-input");
+        return $('#loginForm-password-input');
     }
 
     get btnSubmit () {

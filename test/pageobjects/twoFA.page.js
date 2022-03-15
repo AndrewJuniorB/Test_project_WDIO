@@ -7,7 +7,7 @@ class TwoFactorVerification extends Page {
     }
 
     get optionSelected () {
-        return $('select#2fa-method-select');
+        return $("select#2fa-method-select");
     }
 
     get clickBtn () {
@@ -16,7 +16,7 @@ class TwoFactorVerification extends Page {
 
     async sendCode(option) {
         await this.emailsNotEmpty.isDisplayed();
-        await this.optionSelected.selectByAttribute("value", option);
+        // await this.optionSelected.selectByAttribute("value", option);
         await this.clickBtn.click();
     }
 
